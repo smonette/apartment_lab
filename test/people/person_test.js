@@ -27,6 +27,7 @@ describe("Person", function(){
     });
   });
 
+// TODO: This test is not working
   describe("addProperty", function(){
     it('should add property to array', function(){
       herby.addProperty(propertyName);
@@ -34,12 +35,13 @@ describe("Person", function(){
     });
   });
 
-  // describe("removeProperty", function(){
-  //   it('should remove the property from the array', function(){
-  //     herby.removeProperty(propertyName);
-  //     expect(herby.properties).to.eql([]);
-  //   });
-  // });
+// TODO: This test is not working
+  describe("removeProperty", function(){
+    it('should remove the property from the array', function(){
+      herby.removeProperty(propertyName);
+      expect(herby.properties).to.eql([]);
+    });
+  });
 
 
 

@@ -9,7 +9,7 @@ console.log("Write some test for Property...");
 
 describe("Property", function(){
 
-  
+
   herby = new app.Manager("Herby Smith", "555-555-5555");
   lulu = new app.Tenant("Lulu Johnson", "555-123-4567");
   jolene = new app.Person("Jolene Parton", "555-789-4756");
@@ -51,6 +51,14 @@ describe("Property", function(){
 		});
 	});
 
+  // TODO: This test is not working
+  describe("rentedUnits", function(){
+    it('should display the number of rented units', function(){
+      appBuild.rentedUnits();
+      expect(appBuild.rentedUnits()).to.eql(1);
+    });
+  });
+
 	describe("removeTenant", function(){
 		it('should add a remove a tenant from unit', function(){
 			propertyName.removeTenant(unit1, lulu);
@@ -60,17 +68,10 @@ describe("Property", function(){
 
 	describe("availableUnits", function(){
 		it('should display the number of available units', function(){
-      console.log(appBuild.units)
 			expect(appBuild.availableUnits()).to.equal(1);
 		});
 	});
 
-	// describe("rentedUnits", function(){
-	// 	it('should display the number of rented units', function(){
-	// 		propertyName.rentedUnits();
-	// 		expect( ).to.eql( );
-	// 	});
-	// });
 
 	// Apartment
 	describe("addUnit", function(){
