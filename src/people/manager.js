@@ -28,7 +28,7 @@ Inherit(Manager, Person);
 // };
 
 
-// Solution 
+// From the solution 
 Manager.prototype.addProperty = function(property) {
   // check if property is an INSTANCEOF a PROPERTY
   if (property instanceof Property) {
